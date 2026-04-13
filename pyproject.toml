@@ -1,0 +1,11 @@
+[project]
+name = "macro-micro-calc-cli"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pyfiglet>=1.0.4",
+    "ruff>=0.15.10",
+    "terminaltexteffects>=0.14.2",
+]
