@@ -17,7 +17,6 @@ def start():
     user = find_user()
     if user == None:
         user = new_user()
-        user.calc()
     else:
         print(f"Welcome back, {user.name}!")
     prompt(user)
@@ -25,6 +24,7 @@ def start():
 
 def prompt(user):
     user.print_info()
+    user.calc()
     command = input(f"{user.name} -> ")
     match command:
         case "login":
