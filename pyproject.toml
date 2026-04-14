@@ -7,5 +7,6 @@ requires-python = ">=3.12"
 dependencies = [
     "pyfiglet>=1.0.4",
     "ruff>=0.15.10",
+    "simplejson>=3.20.2",
     "terminaltexteffects>=0.14.2",
 ]
