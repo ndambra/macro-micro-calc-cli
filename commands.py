@@ -1,6 +1,6 @@
 import sys
 from terminaltexteffects.effects.effect_wipe import Wipe
-from users import User, new_user, find_user
+from users import User, new_user, find_user, calculate
 from enum import Enum
 
 
@@ -23,8 +23,8 @@ def start():
 
 
 def prompt(user):
+    calculate(user)
     user.print_info()
-    user.calc()
     command = input(f"{user.name} -> ")
     match command:
         case "login":
