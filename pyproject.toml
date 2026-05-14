@@ -5,6 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "pyfiglet>=1.0.4",
+    "ruff>=0.15.10",
+    "simplejson>=3.20.2",
     "terminaltexteffects>=0.14.2",
 ]
 
@@ -19,3 +22,4 @@ line-length = 80
 [tool.ruff.lint]
 # Add the `line-too-long` rule to the enforced rule set.
 extend-select = ["E501"]
+
