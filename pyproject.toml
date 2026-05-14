@@ -1,0 +1,21 @@
+[project]
+name = "macro-micro-calc-cli"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "terminaltexteffects>=0.14.2",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.10",
+]
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+# Add the `line-too-long` rule to the enforced rule set.
+extend-select = ["E501"]
